@@ -27,15 +27,15 @@ import sys
 
 
 alphabet = [
-				'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
-				'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
-				'u', 'v', 'w', 'x', 'y', 'z'
-			]
+                'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+                'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+                'u', 'v', 'w', 'x', 'y', 'z'
+           ]
 alphebet = [
-				'x', 'e', 'o', 'y', 'z', 'k', 'n', 't', 'b', 'c',
-				'v', 'i', 'r', 's', 'w', 'q', 'a', 'd', 'l', 'u',
-				'j', 'f', 'g', 'm', 'h', 'p'
-			]
+                'x', 'e', 'o', 'y', 'z', 'k', 'n', 't', 'b', 'c',
+                'v', 'i', 'r', 's', 'w', 'q', 'a', 'd', 'l', 'u',
+                'j', 'f', 'g', 'm', 'h', 'p'
+           ]
 
 
 def key(keyword):
@@ -45,23 +45,23 @@ def key(keyword):
 
 	for x in range(7):
 		for character in characters:
-			x = characters.index(character) # this letter in the keyword
-			a = alphabet.index(character) # this letter's index in the alphabet
+			x = characters.index(character)  # this letter in the keyword
+			a = alphabet.index(character)  # this letter's index in the alphabet
 			try:
-				y = characters[x + 1] # the next letter in the keyword
-			except:
-				y = characters[0] # the next letter in the keyword
-			b = alphabet.index(y) # the next letter's index in the alphabet
+				y = characters[x + 1]  # the next letter in the keyword
+			except(Exception) as e:
+				y = characters[0]  # the next letter in the keyword
+			b = alphabet.index(y)  # the next letter's index in the alphabet
 			numbers.append(str(abs(a - b)))
 
-	key = str(''.join(numbers)) # like teeth on a key
+	key = str(''.join(numbers))  # like teeth on a key
 	return key
 
 
 def encode(message, keyword):
 
 	sequence = key(keyword)
-	characters =[*message]
+	characters = [*message]
 	transpositions = [*sequence]
 	results = []
 
@@ -77,7 +77,7 @@ def encode(message, keyword):
 def decode(codetxt, keyword):
 
 	sequence = key(keyword)
-	characters =[*codetxt]
+	characters = [*codetxt]
 	transpositions = [*sequence]
 	results = []
 
