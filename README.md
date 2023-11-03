@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="docs/Basilisk-Grayscale.svg" height="200"/>
+</div>
 <h1 align="center" style="margin-top: -10px"> Basilisk </h1>
 <p align="center" style="width: 100;">
    Text encryption cipher.<br>
@@ -20,10 +23,10 @@
 ## How to Use
 Run the program from a terminal. Say encrypt or decrypt, then your text, then your key.
 
-#### Encrypting
+### Encrypting
 `basilisk.exe encrypt text key`  
 
-#### Decrypting
+### Decrypting
 `basilisk.exe decrypt text key` 
 
 It is recommended to use a phrase wrapped in quotes as opposed to a single word for your key.
