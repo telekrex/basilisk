@@ -1,18 +1,32 @@
-<center> <h1> Basilisk </h1> </center>
+<h1 align="center" style="margin-top: -10px"> Basilisk </h1>
+<p align="center" style="width: 100;">
+   Text encryption cipher.<br>
+</p>
 
-The key word makes the transposing sequence unique, so it's near impossible to crack without the key word. I mainly made this for fun, but it could serve a purpose for someone. A basic knowledge of python scripts should be all you need to use it. It should be compatible with pen on paper as well, since it uses only math and sequences, and no python-specific functions. You'd just have to spend some time copying the engineering. I'd prefer to leave the explicit just to code, but if someone thinks it should be explained in this readme, contact me. I'm also open to any suggestions or contribution ideas.
+## Pre-Requisites
+- (If you're using the source code) Python 3
 
-### Install
+## Installation & Setup
 
-*Requires: Python 3*  
-1. Install Python 3 if you don't have it  
-2. Download or clone this repository  
+### From Release
+1. Download the Windows or Linux release.
+2. Put the program wherever you like, preferably somewhere that's easy to get to in your terminal. The program doesn't need to interact with any files, so it's fully portable and can live anywhere. For Windows users, I'd recommend `C:/Users/user` because it's not uncommon for software and CMD will probably start there.
 
+### From Source
+1. Clone or download this repository and do what you wish with the code.
+2. To build, run either `build-Windows` or `build-Linux`.
+3. Move the `/release` contents to wherever you like.
 
-### Encoding
-`python basilisk.py <encode> <message> <keyword>`  
+## How to Use
+Run the program from a terminal. Say encrypt or decrypt, then your text, then your key.
 
-### Decoding
-`python basilisk.py <decode> <message> <keyword>`  
+#### Encrypting
+`basilisk.exe encrypt text key`  
 
-- Something worth mentioning is that these functions lazilly accept anything as input. It is intended that the keyword and/or message does not include spaces, symbols, and numbers. I could add sanitizing to sturdy up those functions if needed.
+#### Decrypting
+`basilisk.exe decrypt text key` 
+
+It is recommended to use a phrase wrapped in quotes as opposed to a single word for your key.
+
+## Credits
+Written by telekrex. Please direct any suggestions, questions, or suspected security vulnerabilities to telekrex@gmail.com.
