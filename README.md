@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/Basilisk-Grayscale.svg" height="200"/>
+  <img src="docs/snake.png" height="200"/>
 </div>
 <h1 align="center" style="margin-top: -10px"> Basilisk </h1>
 <p align="center" style="width: 100;">
@@ -29,4 +29,5 @@ Decrypting: `python basilisk.py decrypt wiogsjgioeagnagd supersecretkey`
 `basilisk.py` is fully functional as is without installing anything other than python, but if you really want a binary, I would suggest installing [PyInstaller](https://pyinstaller.org/en/stable/installation.html) and running `python -m PyInstaller --onefile basilisk.py`. This would make sense if you have a device where you want basilisk, but not python.
 
 ## Credits
-Orignal work written by telekrex. Please direct any suggestions, questions, or suspected security vulnerabilities to telekrex@gmail.com.
+Code by by telekrex. Please direct any suggestions, questions, or suspected security vulnerabilities to telekrex@gmail.com.  
+Artwork created with Perhance AI.
