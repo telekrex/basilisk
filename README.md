@@ -3,7 +3,7 @@
 </div>
 <h1 align="center" style="margin-top: -10px"> Basilisk </h1>
 <p align="center" style="width: 100;">
-   Text encryption cipher.<br>
+  Fast, plain text shapeshifting encryption cipher.<br>
 </p>
 
 ## Getting Started
