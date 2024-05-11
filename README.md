@@ -6,30 +6,27 @@
    Text encryption cipher.<br>
 </p>
 
-## Pre-Requisites
-- (If you're using the source code) Python 3
-
-## Installation & Setup
-
-### From Release
-1. Download the Windows or Linux release.
-2. Put the program wherever you like, preferably somewhere that's easy to get to in your terminal. The program doesn't need to interact with any files, so it's fully portable and can live anywhere. For Windows users, I'd recommend `C:/Users/user` because it's not uncommon for software and CMD will probably start there.
-
-### From Source
-1. Clone or download this repository and do what you wish with the code.
-2. To build, run either `build-Windows` or `build-Linux`.
-3. Move the `/release` contents to wherever you like.
+## Getting Started
+The only requirement is an installation of Python 3.
+1. Clone or download this repository.
+2. If you want to create a binary for this, see #compiling. Otherwise, you're good to go.
 
 ## How to Use
-Run the program from a terminal. Say encrypt or decrypt, then your text, then your key.
+Basilisk can encrypt or decrypt plain text. It uses a key to generate the sequence it will use to transpose and encrypt the text, so you'll need to come up with a key (think of it like a password) for whatever you're going to encrypt. To decrypt, just like a login, you'll need to provide the key. 
 
-### Encrypting
-`basilisk.exe encrypt text key`  
+Important: Use alphabet characters only. No symbols or numbers. Spaces can be used, but just for clarity on the human end really; they will not count as a character, they will be omitted. Personally I reccommend using a phrase for a key, instead of a word. Examples of good keys would be something like "weliveinatwilightworld" or "andtherearenofriendsatdusk".
 
-### Decrypting
-`basilisk.exe decrypt text key` 
+From within the directory that basilisk is in, run the program from a terminal with the following arguments:
+1. `encrypt` or `decrypt`
+2. The text you are encrypting or decrypting
+3. The key
 
-It is recommended to use a phrase wrapped in quotes as opposed to a single word for your key.
+Examples:  
+Encrypting: `python basilisk.py encrypt mysecretcontents supersecretkey`  
+Decrypting: `python basilisk.py decrypt wiogsjgioeagnagd supersecretkey` 
+
+## Compiling
+`basilisk.py` is fully functional as is without installing anything other than python, but if you really want a binary, I would suggest installing [PyInstaller](https://pyinstaller.org/en/stable/installation.html) and running `python -m PyInstaller --onefile basilisk.py`. This would make sense if you have a device where you want basilisk, but not python.
 
 ## Credits
-Written by telekrex. Please direct any suggestions, questions, or suspected security vulnerabilities to telekrex@gmail.com.
+Orignal work written by telekrex. Please direct any suggestions, questions, or suspected security vulnerabilities to telekrex@gmail.com.
